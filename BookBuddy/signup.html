@@ -1,0 +1,88 @@
+<!-- signup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <style>
+    body {
+      padding-top: 56px;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .navbar-dark .navbar-toggler-icon {
+      background-color: #ffffff;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">BookBuddy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="browse.html">Books for Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sell.html">Sell a Book</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li> -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="signup.html">Sign Up</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sign Up Form -->
+  <div class="container form-container">
+    <h2 class="text-center">Sign Up</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Choose a password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <!--<script src="script.js"></script>-->
+  <script src="signup.js"></script>
+</body>
+</html>
